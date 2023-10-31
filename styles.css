@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'be_vietnam_problack';
+    src: url('bevietnampro-black-webfont.woff2') format('woff2'),
+         url('bevietnampro-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -64,17 +73,22 @@
     color: white;
 }
 
-.content h1 {
-    font-size: 70px;
-    margin-top: 40px;
+.content img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 20%;
+    height: 20%;
 }
 
 .content p {
-    margin: 10px auto;
-    font-weight: 100;
-    line-height: 25px;
+    margin: 25px 0;
+    font-size: 20px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    /* font-family: 'Bayon', sans-serif; */
+    line-height: 10px;
     text-transform: uppercase;
 }
+
 .buttonContainer {
     position: relative;
 }
@@ -88,6 +102,8 @@
     border: 2px solid red;
     background: transparent;
     color: white;
+    font-family: 'Bayon', sans-serif;
+    font-size: 20px;
     cursor: pointer;
     text-transform: uppercase;
     transition: 0.2s ease-in-out;
@@ -95,14 +111,7 @@
 
 .buttonContainer button:hover{
     background-color: black;
-    border: 2px solid black;
+    border: 2px solid white;
+    color: red;
 }
 
-.logo-bottom {
-    position: absolute;
-    bottom: -150px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 150px;
-    height: 150px; 
-}
