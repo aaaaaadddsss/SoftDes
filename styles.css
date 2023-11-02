@@ -105,11 +105,42 @@
   }
   
   .about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 100vh;
-    display: flex;
-    text-align: center;
-    justify-content: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(./Components/Images/Aboutus_bg.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .about-section img{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 20%;
+    height: 15%;
+  }
+
+  .about-section h1 {
+
+    top: 20%;
+    left: 20%;
+    font-size: 91px;
+    font-family: 'Be Vietnam Pro';
+    line-height: 50px;
+    text-transform: uppercase;
+    color: white;
+  }
+  
+  
+  .about-section h1 .us {
+    /* margin: 25px 0; */
+    font-size: 91px; 
+    font-family: 'Be Vietnam Pro';
+    /* line-height: 48px;  */
+    text-transform: uppercase;
+    color: red;
   }
   
   .rates-section {
@@ -127,4 +158,6 @@
     text-align: center;
     justify-content: center;
   }
+  
+
   
