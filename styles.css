@@ -118,6 +118,7 @@ html {
 .about-section .text-section {
   margin-top: 111px;
   margin-left: 98px;
+  position: relative; /* Added this line to make it a positioning context */
 }
 .about-section .text-section h1 {
   margin-top: 198px;
@@ -137,6 +138,8 @@ html {
   line-height: 20px;
   text-transform: uppercase;
   color: white;
+  width: 31%;
+  text-align: justify;
 }
 
 .about-section h1 .us {
@@ -154,6 +157,17 @@ html {
   width: 20%;
   height: 65%;
 }
+.about-section .text-section .map-icon {
+  position: absolute;
+  bottom: 1px;
+  left: 200px; /* Change left to right */
+}
+
+.map-icon img {
+  width: 30px;
+  height: 30px;
+}
+
 
 .rates-section {
   width: 100%;
