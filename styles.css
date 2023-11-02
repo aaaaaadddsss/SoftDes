@@ -113,26 +113,27 @@ html {
     url(./Components/Images/Aboutus_bg.jpg);
   background-size: cover;
   background-position: center;
+  position: relative;
 }
 .about-section .text-section {
-  margin-top: 100px;
-  margin-left: 50px;
+  margin-top: 111px;
+  margin-left: 98px;
 }
 .about-section .text-section h1 {
-  /* margin-top: 100px;
-  margin-left: 20px; */
+  margin-top: 198px;
+  margin-left: 90px;
   font-size: 91px;
-  font-family: "Be Vietnam Pro";
+  font-family: "Bebas Neue-Bold", Helvetica;
   line-height: 50px;
   text-transform: uppercase;
   color: white;
 }
 
 .about-section .text-section p {
-  /* margin-top: 20px;
-  margin-left: 20px; */
-  font-size: 10px;
-  font-family: "Be Vietnam Pro";
+  margin-top: 50px;
+  margin-left: 90px;
+  font-size: 16px;
+  font-family: "Bebas Neue-Bold", Helvetica;
   line-height: 20px;
   text-transform: uppercase;
   color: white;
@@ -141,10 +142,17 @@ html {
 .about-section h1 .us {
   /* margin: 25px 0; */
   font-size: 91px;
-  font-family: "Be Vietnam Pro";
+  font-family: "Bebas Neue-Bold", Helvetica;
   /* line-height: 48px;  */
   text-transform: uppercase;
   color: red;
+}
+.about-image {
+  position: absolute;
+  top: 150px;
+  right: 200px; /* Change left to right */
+  width: 20%;
+  height: 65%;
 }
 
 .rates-section {
