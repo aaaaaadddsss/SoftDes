@@ -104,6 +104,7 @@ html {
   border: 2px solid white;
   color: red;
 }
+
 .about-section {
   display: flex;
   flex-direction: column;
@@ -152,7 +153,7 @@ html {
 .about-image {
   position: absolute;
   top: 150px;
-  right: 200px; 
+  right: 200px;
   width: 20%;
   height: 65%;
 }
@@ -168,6 +169,43 @@ html {
   height: 30px;
 }
 
+.about-section .buttonforNextAboutSection {
+  display: flex;
+  margin-top: 150px;
+  margin-left: 190px;
+}
+
+.about-section .buttonforNextAboutSection button {
+  width: 80px;
+  padding: 5px 5px;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 20px;
+  font-weight: 500;
+  border: 2px solid red;
+  background: transparent;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.about-section .buttonforNextAboutSection button:hover {
+  background-color: black;
+  border: 2px solid white;
+  color: red;
+}
+
+.about-section .buttonforNextAboutSection button a:hover {
+  color: red;
+}
+
+.about-section .buttonforNextAboutSection button a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Bayon", sans-serif;
+  font-size: 20px;
+  transition: 0.2s ease-in-out;
+}
 
 .rates-section {
   width: 100%;
