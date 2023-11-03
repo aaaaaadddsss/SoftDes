@@ -451,7 +451,7 @@ html {
   color: white;
 }
 
-.rates-section h1 {
+.header h1 {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 82px;
   line-height: 100px;
@@ -461,43 +461,88 @@ html {
   margin-bottom: 50px;
 }
 
-.rates-section h1 span{
+.header h1 span{
   font-family: 'Bebas Neue', sans-serif;
   font-size: 82px;
   color: red;
 }
 
-.rates-content {
-  margin-left: 50px;
-  color: white;
+.rateContainer {
+  display: grid;
+  place-items: center;
 }
 
-.rate-description {
+.cardContainer {
+  display: grid;
+  row-gap: 15px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.cardArticle {
+  position: relative;
+  margin: 15px
+}
+
+.Title {
+  border: 2px solid red;
+  border-radius: 15px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
   font-family: "Bebas Neue", sans-serif;
-  margin-bottom: 25px;
-  margin-top: 25px;
+  font-weight: 500;
+  font-size: 30px;
+  transition: 0.2s ease-in-out;
 }
 
-.rate-price {
+.Title:hover {
+  border: 2px solid white;
+  font-size: 32px;
   color: red;
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 40px;
-  margin-right: 50px;
 }
 
-.rate-list li {
-  margin: 0px 0;
-  display: flex;
-  justify-content: space-between;
-  font-family: 'Bebas Neue', sans-serif; 
-  font-size: 40px; 
-  font-weight: normal; 
-  text-transform: uppercase;
-  color: white;
-
+.cardData {
+  background-color: black;
+  border: 2px solid white;
+  color: red;
+  width: 60px;
+  text-align: center;
+  border-radius: 10px;
+  padding: 5px 5px;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+  opacity: 0;
+  transition: opacity 1s 1s;
+  font-weight: 500;
 }
 
+.cardDescription {
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+}
 
+.cardArticle:hover .cardData{
+  animation: show-data 1s forwards;
+  opacity: 1;
+  transition: opacity .3s;
+}
+
+.cardArticle:hover{
+  animation: remove-overflow 2s forwards;
+}
+
+@keyframes show-data {
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(1.5px);
+  }
+}
 /* END OF RATE */
 
 /* PROFILE */
