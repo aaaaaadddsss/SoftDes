@@ -39,6 +39,39 @@ html {
   color: white;
   text-transform: uppercase;
 }
+/* END OF NAVBAR */
+/* BACK TO TOP */
+.BackToTop {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid red;
+  background: transparent;
+  border-radius: 8px;
+  padding: 10px;
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+  z-index: 1;
+}
+
+.BackToTop span {
+  color: white;
+  font-size: 25px;
+  transition: 0.2s ease-in-out;
+}
+
+.BackToTop:hover {
+  border: 2px solid white;
+}
+
+.BackToTop span:hover{
+  color: red;
+  transform: translateY(-5px);
+}
+/* END OF BACK TO TOP */
 /* HOME SECTION */
 .content {
   display: flex;
