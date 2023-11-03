@@ -67,7 +67,7 @@ html {
   border: 2px solid white;
 }
 
-.BackToTop span:hover{
+.BackToTop span:hover {
   color: red;
   transform: translateY(-5px);
 }
@@ -167,6 +167,13 @@ html {
   color: white;
 }
 
+.about-section .text-section h1 span {
+  font-size: 91px;
+  font-family: "Bebas Neue-Bold", Helvetica;
+  text-transform: uppercase;
+  color: red;
+}
+
 .about-section .text-section p {
   margin-top: 35px;
   margin-left: 100px;
@@ -179,14 +186,7 @@ html {
   text-align: justify;
 }
 
-.about-section h1 .us {
-  font-size: 91px;
-  font-family: "Bebas Neue-Bold", Helvetica;
-  text-transform: uppercase;
-  color: red;
-}
-
-.about-image {
+.about-section .about-image {
   position: absolute;
   top: 150px;
   right: 200px;
