@@ -183,12 +183,13 @@ html {
 }
 
 .image-slider {
-  width: 20%;
+  width: 40%;
   height: 65%;
   position: absolute;
   top: 150px;
-  right: 200px;
+  left: 975px;
   overflow: hidden;
+  border-radius: 15px;
 }
 
 .slider-image {
@@ -209,10 +210,10 @@ html {
   0% {
     opacity: 0;
   }
-  10% {
+  5% {
     opacity: 1;
   }
-  25% {
+  15% {
     opacity: 1;
   }
   35% {
@@ -227,13 +228,13 @@ html {
   0% {
     opacity: 0;
   }
-  35% {
+  15% {
     opacity: 0;
   }
-  45% {
+  20% {
     opacity: 1;
   }
-  60% {
+  30% {
     opacity: 1;
   }
   70% {
@@ -248,7 +249,61 @@ html {
   0% {
     opacity: 0;
   }
-  70% {
+  30% {
+    opacity: 0;
+  }
+  35% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes imageSlider4 {
+  0% {
+    opacity: 0;
+  }
+  45% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes imageSlider5 {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  65% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes imageSlider6 {
+  0% {
+    opacity: 0;
+  }
+  75% {
     opacity: 0;
   }
   80% {
@@ -263,15 +318,27 @@ html {
 }
 
 .slider-image:nth-child(1) {
-  animation: imageSlider1 18s infinite;
+  animation: imageSlider1 15s infinite;
 }
 
 .slider-image:nth-child(2) {
-  animation: imageSlider2 18s infinite;
+  animation: imageSlider2 15s infinite;
 }
 
 .slider-image:nth-child(3) {
-  animation: imageSlider3 18s infinite;
+  animation: imageSlider3 15s infinite;
+}
+
+.slider-image:nth-child(4) {
+  animation: imageSlider4 15s infinite;
+}
+
+.slider-image:nth-child(5) {
+  animation: imageSlider5 15s infinite;
+}
+
+.slider-image:nth-child(6) {
+  animation: imageSlider6 15s infinite;
 }
 
 .about-section .text-section {
@@ -378,7 +445,7 @@ html {
   justify-content: center;
   flex-direction: column;
   background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-    url(./Components/Images/Aboutus_bg.jpg);
+    url(./Components/Images/RatesBackgroud.jpg);
   background-size: cover;
   background-position: center;
   color: white;
@@ -441,7 +508,7 @@ html {
   text-align: center;
   justify-content: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-  url(./Components/Images/Aboutus_bg.jpg);
+  url(./Components/Images/ProfileBackground.jpg);
   background-size: cover;
   background-position: center;
   color: white;
