@@ -73,7 +73,7 @@
   <div id="home" class="content">
     <img src="./Components/Images/A88LogoFinal.png" alt="logo" />
     <p>
-      Let's go and start your <br />
+      Let's go and start your
       fitness journey with us!
     </p>
     <!-- BUTTONS IN HOME -->
@@ -154,8 +154,9 @@
   <!-- PROFILE -->
   <div id="profile" class="profile-section">
     <div class="profile-content">
+      <!-- MEMBER LOGIN -->
       <div class="profile-form">
-        <h2>Member Login</h2>
+        <h2>Member <span>Login</span></h2>
         <form id="member-login-form">
           <label for="memberUsername">Username:</label>
           <input type="text" id="memberUsername" name="memberUsername" required>
@@ -166,8 +167,10 @@
           <button type="button" onclick="memberLogin()">Login</button>
         </form>
       </div>
+      <!-- END OF MEMBER LOGIN -->
+      <!-- ADMIN LOGIN -->
       <div class="admin-form">
-        <h2>Admin Login</h2>
+        <h2>Admin <span>Login</span></h2>
         <form id="admin-login-form">
           <label for="adminUsername">Username:</label>
           <input type="text" id="adminUsername" name="adminUsername" required>
@@ -178,6 +181,7 @@
           <button type="button" onclick="adminLogin()">Login</button>
         </form>
       </div>
+      <!-- END OF ADMIN LOGIN -->
     </div>
   </div>
   <!-- END OF PROFILE -->

@@ -115,16 +115,15 @@ html {
 
 .content img {
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   width: 20%;
   height: 15%;
 }
 
 .content p {
-  margin: 25px 0;
-  font-size: 20px;
-  font-family: 'Popppins', sans-serif;
-  line-height: 25px;
+  margin: 15px;
+  font-size: 35px;
+  font-family: 'Bebas Neue', sans-serif;
   text-transform: uppercase;
   color: white;
   justify-content: center;
@@ -133,6 +132,7 @@ html {
 
 .buttonContainer {
   display: flex;
+  margin-top: -15px;
 }
 
 .buttonContainer button a {
@@ -501,6 +501,11 @@ html {
 
 h2 {
   font-size: 36px;
+  color: white;
+}
+
+h2 span {
+  font-size: 36px;
   color: red;
 }
 
@@ -508,29 +513,35 @@ label {
   display: block;
   margin-top: 10px;
   text-align: left;
+  font-family: "Poppins", sans-serif;
 }
 
 input {
   width: 100%;
   padding: 10px;
   margin-top: 5px;
+  border-radius: 20px;
 }
 
 button {
-  background: red;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  font-size: 20px;
+  width: 100px;
+  padding: 5px 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 20px;
+  font-weight: 500;
+  border: 2px solid red;
+  background: transparent;
   cursor: pointer;
-  margin-top: 10px;
-  border-radius: 10px;
-  text-transform: uppercase;
+  transition: 0.2s ease-in-out;
+  font-family: "Bayon", sans-serif;
+  font-size: 20px;
+  color: white;
 }
 
 button:hover {
-  background: white;
   color: red;
+  border: 2px solid white;
 }
 
 /* END OF PROFILE */
