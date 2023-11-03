@@ -454,11 +454,18 @@ html {
 .header h1 {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 82px;
-  line-height: 100px;
   color: white;
   text-align: center;
   justify-content: center;
   margin-bottom: 50px;
+}
+
+.line {
+  width: 480px;
+  height: 5px;
+  border-radius: 15px;
+  background-color: white; 
+  margin: -50px auto; 
 }
 
 .header h1 span{
@@ -480,7 +487,8 @@ html {
 
 .cardArticle {
   position: relative;
-  margin: 15px
+  margin: 15px;
+  margin-top: 150px;
 }
 
 .Title {
@@ -542,6 +550,43 @@ html {
   100% {
     transform: translateY(1.5px);
   }
+}
+
+.buttonforRateSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.buttonforRateSection button {
+  width: 80px;
+  padding: 5px 5px;
+  text-align: center;
+  margin: 10px 10px;
+  border-radius: 20px;
+  font-weight: 500;
+  border: 2px solid white;
+  background: transparent;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.buttonforRateSection button:hover {
+  border: 2px solid red;
+}
+
+.buttonforRateSection button a{ 
+  text-decoration: none;
+  color: red;
+  text-transform: uppercase;
+  font-family: "Bayon", sans-serif;
+  font-size: 20px;
+  transition: 0.2s ease-in-out;
+}
+
+.buttonforRateSection button a:hover{
+  color: white;
 }
 /* END OF RATE */
 
