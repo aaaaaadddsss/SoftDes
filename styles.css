@@ -123,7 +123,7 @@ html {
 .content p {
   margin: 15px;
   font-size: 35px;
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   text-transform: uppercase;
   color: white;
   justify-content: center;
@@ -182,6 +182,59 @@ html {
   position: relative;
 }
 
+/* Style the radio buttons and labels */
+input[type="radio"] {
+  display: none;
+}
+
+.page-label {
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 20px;
+  padding: 5px;
+  background: transparent;
+  position: relative;
+}
+
+.page-label img {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  margin-left: 95px;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 5px;
+  transition: 0.2s ease-in-out;
+}
+
+.page-label img:hover {
+  transform: scale(1.5);
+  border: 2px solid red;
+}
+
+/* Style the content sections */
+.about-page {
+  display: none;
+  margin-top: 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+  text-align: justify;
+  font-weight: 300;
+}
+
+/* Show the content section when the corresponding radio button is checked */
+#page1:checked ~ #page1-content,
+#page2:checked ~ #page2-content,
+#page3:checked ~ #page3-content {
+  display: block;
+}
+
 .image-slider {
   width: 40%;
   height: 65%;
@@ -208,14 +261,16 @@ html {
 
 .active {
   opacity: 1;
-} 
+}
 
 @keyframes imageSlider1 {
-  0%, 15% {
+  0%,
+  15% {
     transform: translateX(-100%);
     opacity: 0;
   }
-  15%, 25% {
+  15%,
+  25% {
     transform: translateX(0%);
     opacity: 1;
   }
@@ -226,11 +281,13 @@ html {
 }
 
 @keyframes imageSlider2 {
-  0%, 30% {
+  0%,
+  30% {
     transform: translateX(-100%);
     opacity: 0;
   }
-  35%, 45% {
+  35%,
+  45% {
     transform: translateX(0%);
     opacity: 1;
   }
@@ -241,11 +298,13 @@ html {
 }
 
 @keyframes imageSlider3 {
-  0%, 50% {
+  0%,
+  50% {
     transform: translateX(-100%);
     opacity: 0;
   }
-  55%, 65% {
+  55%,
+  65% {
     transform: translateX(0%);
     opacity: 1;
   }
@@ -256,11 +315,13 @@ html {
 }
 
 @keyframes imageSlider4 {
-  0%, 70% {
+  0%,
+  70% {
     transform: translateX(-100%);
     opacity: 0;
   }
-  75%, 85% {
+  75%,
+  85% {
     transform: translateX(0%);
     opacity: 1;
   }
@@ -296,7 +357,7 @@ html {
   margin-top: 200px;
   margin-left: 100px;
   font-size: 91px;
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   line-height: 50px;
   text-transform: uppercase;
   color: white;
@@ -304,7 +365,7 @@ html {
 
 .about-section .text-section h1 span {
   font-size: 91px;
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   text-transform: uppercase;
   color: red;
 }
@@ -313,7 +374,7 @@ html {
   margin-top: 35px;
   margin-left: 100px;
   font-size: 16px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   line-height: 20px;
   text-transform: uppercase;
   color: white;
@@ -333,8 +394,8 @@ html {
 .about-section .text-section .map-icon {
   position: absolute;
   margin-top: 35px;
-  bottom: -50px;
-  left: 100px;
+  bottom: -60px;
+  left: 95px;
 }
 
 .map-icon img {
@@ -397,7 +458,7 @@ html {
 }
 
 .header h1 {
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   font-size: 82px;
   color: white;
   text-align: center;
@@ -409,12 +470,12 @@ html {
   width: 480px;
   height: 5px;
   border-radius: 15px;
-  background-color: white; 
-  margin: -50px auto; 
+  background-color: white;
+  margin: -50px auto;
 }
 
-.header h1 span{
-  font-family: 'Bebas Neue', sans-serif;
+.header h1 span {
+  font-family: "Bebas Neue", sans-serif;
   font-size: 82px;
   color: red;
 }
@@ -477,13 +538,13 @@ html {
   font-family: "Poppins", sans-serif;
 }
 
-.cardArticle:hover .cardData{
+.cardArticle:hover .cardData {
   animation: show-data 1s forwards;
   opacity: 1;
-  transition: opacity .3s;
+  transition: opacity 0.3s;
 }
 
-.cardArticle:hover{
+.cardArticle:hover {
   animation: remove-overflow 2s forwards;
 }
 
@@ -517,10 +578,10 @@ html {
 }
 
 .buttonforRateSection button:hover {
-  border: 2px solid white;
+  border: 2px solid red;
 }
 
-.buttonforRateSection a{ 
+.buttonforRateSection a {
   text-decoration: none;
   color: white;
   text-transform: uppercase;
@@ -529,7 +590,7 @@ html {
   transition: 0.2s ease-in-out;
 }
 
-.buttonforRateSection a:hover{
+.buttonforRateSection a:hover {
   color: red;
 }
 /* END OF RATE */
@@ -542,7 +603,7 @@ html {
   text-align: center;
   justify-content: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-  url(./Components/Images/ProfileBackground.jpg);
+    url(./Components/Images/ProfileBackground.jpg);
   background-size: cover;
   background-position: center;
   color: white;
@@ -556,7 +617,8 @@ html {
   height: 100%;
 }
 
-.profile-form, .admin-form {
+.profile-form,
+.admin-form {
   text-align: center;
   font-family: "Bebas Neue-Bold", sans-serif;
   font-size: 20px;
