@@ -192,6 +192,10 @@ html {
   border-radius: 15px;
 }
 
+.image-slider img {
+  border-radius: 15px;
+}
+
 .slider-image {
   width: 100%;
   height: 100%;
@@ -207,112 +211,61 @@ html {
 } 
 
 @keyframes imageSlider1 {
-  0% {
+  0%, 15% {
+    transform: translateX(-100%);
     opacity: 0;
   }
-  5% {
+  15%, 25% {
+    transform: translateX(0%);
     opacity: 1;
   }
-  15% {
-    opacity: 1;
-  }
-  35% {
-    opacity: 0;
-  }
-  100% {
+  30% {
+    transform: translateX(100%);
     opacity: 0;
   }
 }
 
 @keyframes imageSlider2 {
-  0% {
+  0%, 30% {
+    transform: translateX(-100%);
     opacity: 0;
   }
-  15% {
-    opacity: 0;
-  }
-  20% {
+  35%, 45% {
+    transform: translateX(0%);
     opacity: 1;
   }
-  30% {
-    opacity: 1;
-  }
-  70% {
-    opacity: 0;
-  }
-  100% {
+  50% {
+    transform: translateX(100%);
     opacity: 0;
   }
 }
 
 @keyframes imageSlider3 {
-  0% {
+  0%, 50% {
+    transform: translateX(-100%);
     opacity: 0;
   }
-  30% {
-    opacity: 0;
-  }
-  35% {
+  55%, 65% {
+    transform: translateX(0%);
     opacity: 1;
   }
-  45% {
-    opacity: 1;
-  }
-  100% {
+  70% {
+    transform: translateX(100%);
     opacity: 0;
   }
 }
 
 @keyframes imageSlider4 {
-  0% {
+  0%, 70% {
+    transform: translateX(-100%);
     opacity: 0;
   }
-  45% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  60% {
+  75%, 85% {
+    transform: translateX(0%);
     opacity: 1;
   }
   100% {
-    opacity: 0;
-  }
-}
-
-@keyframes imageSlider5 {
-  0% {
-    opacity: 0;
-  }
-  60% {
-    opacity: 0;
-  }
-  65% {
-    opacity: 1;
-  }
-  75% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes imageSlider6 {
-  0% {
-    opacity: 0;
-  }
-  75% {
-    opacity: 0;
-  }
-  80% {
-    opacity: 1;
-  }
-  95% {
-    opacity: 1;
-  }
-  100% {
+    transform: translateX(100%);
     opacity: 0;
   }
 }
@@ -331,14 +284,6 @@ html {
 
 .slider-image:nth-child(4) {
   animation: imageSlider4 15s infinite;
-}
-
-.slider-image:nth-child(5) {
-  animation: imageSlider5 15s infinite;
-}
-
-.slider-image:nth-child(6) {
-  animation: imageSlider6 15s infinite;
 }
 
 .about-section .text-section {
@@ -492,7 +437,7 @@ html {
 }
 
 .Title {
-  border: 2px solid red;
+  border: 3px solid red;
   border-radius: 15px;
   text-align: center;
   justify-content: center;
@@ -505,14 +450,14 @@ html {
 }
 
 .Title:hover {
-  border: 2px solid white;
+  border: 5px solid white;
   font-size: 32px;
   color: red;
 }
 
 .cardData {
   background-color: black;
-  border: 2px solid white;
+  border: 3px solid white;
   color: red;
   width: 60px;
   text-align: center;
@@ -525,7 +470,6 @@ html {
   margin-inline: auto;
   opacity: 0;
   transition: opacity 1s 1s;
-  font-weight: 500;
 }
 
 .cardDescription {
@@ -566,27 +510,27 @@ html {
   margin: 10px 10px;
   border-radius: 20px;
   font-weight: 500;
-  border: 2px solid white;
+  border: 2px solid red;
   background: transparent;
   cursor: pointer;
   transition: 0.2s ease-in-out;
 }
 
 .buttonforRateSection button:hover {
-  border: 2px solid red;
+  border: 2px solid white;
 }
 
-.buttonforRateSection button a{ 
+.buttonforRateSection a{ 
   text-decoration: none;
-  color: red;
+  color: white;
   text-transform: uppercase;
   font-family: "Bayon", sans-serif;
   font-size: 20px;
   transition: 0.2s ease-in-out;
 }
 
-.buttonforRateSection button a:hover{
-  color: white;
+.buttonforRateSection a:hover{
+  color: red;
 }
 /* END OF RATE */
 

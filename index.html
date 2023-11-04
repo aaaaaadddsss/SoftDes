@@ -1,201 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bayon&family=Be+Vietnam+Pro:wght@100;200&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Bayon&family=Be+Vietnam+Pro:wght@100;200&family=Bebas+Neue&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Bayon&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-  <title>FitFolio</title>
-  <script>
-    function memberLogin() {
-      const username = document.getElementById("memberUsername").value;
-      const password = document.getElementById("memberPassword").value;
-  
-      // Replace 
-      const validUsername = "member";
-      const validPassword = "password";
-  
-      if (username === validUsername && password === validPassword) {
-        alert("Member login successful");
-    
-      } else {
-        alert("Invalid credentials. Please try again.");
-      }
-    }
-  
-    function adminLogin() {
-      const username = document.getElementById("adminUsername").value;
-      const password = document.getElementById("adminPassword").value;
-  
-      // Replace 
-      const validUsername = "admin";
-      const validPassword = "adminpassword";
-  
-      if (username === validUsername && password === validPassword) {
-        alert("Admin login successful");
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bayon&family=Be+Vietnam+Pro:wght@100;200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bayon&family=Be+Vietnam+Pro:wght@100;200&family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bayon&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <title>FitFolio</title>
+    <script>
+      function memberLogin() {
+        const username = document.getElementById("memberUsername").value;
+        const password = document.getElementById("memberPassword").value;
 
-      } else {
-        alert("Invalid credentials. Please try again.");
+        // Replace
+        const validUsername = "member";
+        const validPassword = "password";
+
+        if (username === validUsername && password === validPassword) {
+          alert("Member login successful");
+        } else {
+          alert("Invalid credentials. Please try again.");
+        }
       }
-    }
-  </script>
-</head>
-<body>
-  <!-- NAVBAR -->
-  <div class="navbar">
-    <a href="#home">
-      <img src="./Components/Images/LogoWhite.png" alt="logo" class="logo" />
+
+      function adminLogin() {
+        const username = document.getElementById("adminUsername").value;
+        const password = document.getElementById("adminPassword").value;
+
+        // Replace
+        const validUsername = "admin";
+        const validPassword = "adminpassword";
+
+        if (username === validUsername && password === validPassword) {
+          alert("Admin login successful");
+        } else {
+          alert("Invalid credentials. Please try again.");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <a href="#home">
+        <img src="./Components/Images/LogoWhite.png" alt="logo" class="logo" />
+      </a>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#rates">Rates</a></li>
+        <li><a href="#profile">Profile</a></li>
+      </ul>
+    </div>
+    <!-- END OF NAVBAR -->
+
+    <!-- BACK TO TOP -->
+    <a href="#" class="BackToTop">
+      <span class="material-symbols-outlined"> keyboard_double_arrow_up </span>
     </a>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#rates">Rates</a></li>
-      <li><a href="#profile">Profile</a></li>
-    </ul>
-  </div>
-  <!-- END OF NAVBAR -->
+    <!-- END OF BACK TO TOP -->
 
-  <!-- BACK TO TOP -->
-  <a href="#" class="BackToTop">
-    <span class="material-symbols-outlined"> keyboard_double_arrow_up </span>
-  </a>
-  <!-- END OF BACK TO TOP -->
-
-  <!-- HOME -->
-  <div id="home" class="content">
-    <img src="./Components/Images/A88LogoFinal.png" alt="logo" />
-    <p>
-      Let's go and start your
-      fitness journey with us!
-    </p>
-    <!-- BUTTONS IN HOME -->
-    <div class="buttonContainer">
-      <button type="button"><a href="#about"> Learn More</a></button>
-      <button type="button"><a href="#profile">Join</a></button>
-    </div>
-  </div>
-  <!-- END OF HOME -->
-
-  <!-- ABOUT -->
-  <div id="about" class="about-section">
-    <div class="image-slider">
-      <img src="./Components/Images/Pic4.jpg" alt="Image 1" class="slider-image" />
-      <img src="./Components/Images/Pic5.jpg" alt="Image 2" class="slider-image" />
-      <img src="./Components/Images/Pic6.jpg" alt="Image 3" class="slider-image" />
-      <img src="./Components/Images/Pic7.jpg" alt="Image 4" class="slider-image" />
-      <img src="./Components/Images/Pic8.jpg" alt="Image 5" class="slider-image" />
-      <img src="./Components/Images/Pic9.jpg" alt="Image 6" class="slider-image" />
-    </div>
-    <!-- TEXT IN ABOUT -->
-    <div class="text-section">
-      <h1>ABOUT <span class="us">US</span></h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Necessitatibus magni consequatur, tempore fugiat ab aut, sed dicta
-        expedita facilis dignissimos optio voluptas consequuntur odit ducimus
-        earum maiores modi rem asperiores?
-      </p>
-      <!-- ICONS IN ABOUT BELOW TEXT -->
-      <span class="map-icon">
-        <a href="https://www.google.com/maps/dir/179+A.+Bonifacio+Avenue,+Marikina,+Metro+Manila/179+A.+Bonifacio+Ave,+Marikina,+1800+Metro+Manila/@14.6344128,121.0865769,17z/data=!4m8!4m7!1m2!1m1!1s0x3397b82c8cdb2d35:0x153a4ad97daf828b!1m2!1m1!1s0x3397b82c8cdb2d35:0x153a4ad97daf828b!3e0">
-          <img src="./Components/Images/placeholder.png" alt="Map Icon" />
+    <!-- HOME -->
+    <div id="home" class="content">
+      <img src="./Components/Images/A88LogoFinal.png" alt="logo" />
+      <p>Let's go and start your fitness journey with us!</p>
+      <!-- BUTTONS IN HOME -->
+      <div class="buttonContainer">
+        <a href="#about">
+          <button type="button">Learn More</button>
         </a>
-        <a href="https://www.facebook.com/profile.php?id=100083412706818">
-          <img src="./Components/Images/facebookRed.png" alt="facebook" />
+        <a href="#profile">
+          <button type="button">Join</button>
         </a>
-      </span>
-    </div>
-    <!-- BUTTONS IN ABOUT -->
-    <div class="buttonforNextAboutSection">
-      <button type="button"><a href="#home"> Back </a></button>
-      <button type="button"><a href="#rates"> Next </a></button>
-    </div>
-  </div>
-  <!-- END OF ABOUT -->
-
-  <!-- RATE -->
-  <div id="rates" class="rates-section">
-    <div class="header">
-      <h1>GYM ACCESS <span>RATES</span></h1>
-      <div class="line"></div>
-    </div>
-    <div class="rateContainer">
-      <div class="cardContainer">
-        <article class="cardArticle">
-          <h1 class="Title">1 DAY<br/>GYM ACCESS</h1>
-          <div class="cardData">
-            <span class="cardDescription">70</span>
-          </div>
-        </article>
-
-        <article class="cardArticle">
-          <h1 class="Title">1 MONTHS<br/>UNLIMITED GYM ACCESS</h1>
-          <div class="cardData">
-            <span class="cardDescription">700</span>
-          </div>
-        </article>
-
-        <article class="cardArticle">
-          <h1 class="Title">2 MONTHS<br/>UNLIMITED GYM ACCESS</h1>
-          <div class="cardData">
-            <span class="cardDescription">1300</span>
-          </div>
-        </article>
-
-        <article class="cardArticle">
-          <h1 class="Title">3 MONTHS<br/>UNLIMITED GYM ACCESS</h1>
-          <div class="cardData">
-            <span class="cardDescription">1900</span>
-          </div>
-        </article>
       </div>
     </div>
-    <div class="buttonforRateSection">
-      <button type="button"><a href="#about"> Back </a></button>
-      <button type="button""><a href="#profile"> Next </a></button>
-    </div>
-  </div>
-  <!-- END OF RATE -->
+    <!-- END OF HOME -->
 
-  <!-- PROFILE -->
-  <div id="profile" class="profile-section">
-    <div class="profile-content">
-      <!-- MEMBER LOGIN -->
-      <div class="profile-form">
-        <h2>Member <span>Login</span></h2>
-        <form id="member-login-form">
-          <label for="memberUsername">Username:</label>
-          <input type="text" id="memberUsername" name="memberUsername" required>
-  
-          <label for="memberPassword">Password:</label>
-          <input type="password" id="memberPassword" name="memberPassword" required>
-  
-          <button type="button" onclick="memberLogin()">Login</button>
-        </form>
+    <!-- ABOUT -->
+    <div id="about" class="about-section">
+      <div class="image-slider">
+        <img
+          src="./Components/Images/Pic4.jpg"
+          alt="Image 1"
+          class="slider-image"
+        />
+        <img
+          src="./Components/Images/Pic5.jpg"
+          alt="Image 2"
+          class="slider-image"
+        />
+        <img
+          src="./Components/Images/Pic6.jpg"
+          alt="Image 3"
+          class="slider-image"
+        />
+        <img
+          src="./Components/Images/Pic7.jpg"
+          alt="Image 4"
+          class="slider-image"
+        />
+        <img
+          src="./Components/Images/Pic8.jpg"
+          alt="Image 5"
+          class="slider-image"
+        />
+        <img
+          src="./Components/Images/Pic9.jpg"
+          alt="Image 6"
+          class="slider-image"
+        />
       </div>
-      <!-- END OF MEMBER LOGIN -->
-      <!-- ADMIN LOGIN -->
-      <div class="admin-form">
-        <h2>Admin <span>Login</span></h2>
-        <form id="admin-login-form">
-          <label for="adminUsername">Username:</label>
-          <input type="text" id="adminUsername" name="adminUsername" required>
-  
-          <label for "adminPassword">Password:</label>
-          <input type="password" id="adminPassword" name="adminPassword" required>
-  
-          <button type="button" onclick="adminLogin()">Login</button>
-        </form>
+      <!-- TEXT IN ABOUT -->
+      <div class="text-section">
+        <h1>ABOUT <span class="us">US</span></h1>
+        <p>
+          A88 Fitness Center opened on September 2, 2022. Our goal is to bring
+          high-end gym equipment but with an affordable and flexible monthly
+          fees. Along with this concept, lies the ultimate goal of every fitness
+          center. to create a gym community where everyone is accepted
+          regardless of their fitness level. 
+          <BR/>
+          <BR/>
+          We strive to promote a fitness
+          lifestyle to our community and help them achieve their fitness goals.
+        </p>
+        <!-- ICONS IN ABOUT BELOW TEXT -->
+        <span class="map-icon">
+          <a
+            href="https://www.google.com/maps/dir/179+A.+Bonifacio+Avenue,+Marikina,+Metro+Manila/179+A.+Bonifacio+Ave,+Marikina,+1800+Metro+Manila/@14.6344128,121.0865769,17z/data=!4m8!4m7!1m2!1m1!1s0x3397b82c8cdb2d35:0x153a4ad97daf828b!1m2!1m1!1s0x3397b82c8cdb2d35:0x153a4ad97daf828b!3e0"
+          >
+            <img src="./Components/Images/placeholder.png" alt="Map Icon" />
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=100083412706818">
+            <img src="./Components/Images/facebookRed.png" alt="facebook" />
+          </a>
+        </span>
       </div>
-      <!-- END OF ADMIN LOGIN -->
+      <!-- BUTTONS IN ABOUT -->
+      <div class="buttonforNextAboutSection">
+        <a href="#home">
+          <button type="button">Back</button>
+        </a>
+        <a href="#rates">
+          <button type="button">Next</button>
+        </a>
+      </div>
     </div>
-  </div>
-  <!-- END OF PROFILE -->
-</body>
+    <!-- END OF ABOUT -->
+
+    <!-- RATE -->
+    <div id="rates" class="rates-section">
+      <div class="header">
+        <h1>GYM ACCESS <span>RATES</span></h1>
+        <div class="line"></div>
+      </div>
+      <div class="rateContainer">
+        <div class="cardContainer">
+          <article class="cardArticle">
+            <h1 class="Title">1 DAY<br />GYM ACCESS</h1>
+            <div class="cardData">
+              <span class="cardDescription">70</span>
+            </div>
+          </article>
+
+          <article class="cardArticle">
+            <h1 class="Title">1 MONTHS<br />UNLIMITED GYM ACCESS</h1>
+            <div class="cardData">
+              <span class="cardDescription">700</span>
+            </div>
+          </article>
+
+          <article class="cardArticle">
+            <h1 class="Title">2 MONTHS<br />UNLIMITED GYM ACCESS</h1>
+            <div class="cardData">
+              <span class="cardDescription">1300</span>
+            </div>
+          </article>
+
+          <article class="cardArticle">
+            <h1 class="Title">3 MONTHS<br />UNLIMITED GYM ACCESS</h1>
+            <div class="cardData">
+              <span class="cardDescription">1900</span>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="buttonforRateSection">
+        <a href="#about">
+          <button type="button">Back</button>
+        </a>
+        <a href="#profile">
+          <button type="button">Next</button>
+        </a>
+      </div>
+    </div>
+    <!-- END OF RATE -->
+
+    <!-- PROFILE -->
+    <div id="profile" class="profile-section">
+      <div class="profile-content">
+        <!-- MEMBER LOGIN -->
+        <div class="profile-form">
+          <h2>Member <span>Login</span></h2>
+          <form id="member-login-form">
+            <label for="memberUsername">Username:</label>
+            <input
+              type="text"
+              id="memberUsername"
+              name="memberUsername"
+              required
+            />
+
+            <label for="memberPassword">Password:</label>
+            <input
+              type="password"
+              id="memberPassword"
+              name="memberPassword"
+              required
+            />
+
+            <button type="button" onclick="memberLogin()">Login</button>
+          </form>
+        </div>
+        <!-- END OF MEMBER LOGIN -->
+        <!-- ADMIN LOGIN -->
+        <div class="admin-form">
+          <h2>Admin <span>Login</span></h2>
+          <form id="admin-login-form">
+            <label for="adminUsername">Username:</label>
+            <input
+              type="text"
+              id="adminUsername"
+              name="adminUsername"
+              required
+            />
+
+            <label for="adminPassword">Password:</label>
+            <input
+              type="password"
+              id="adminPassword"
+              name="adminPassword"
+              required
+            />
+
+            <button type="button" onclick="adminLogin()">Login</button>
+          </form>
+        </div>
+        <!-- END OF ADMIN LOGIN -->
+      </div>
+    </div>
+    <!-- END OF PROFILE -->
+  </body>
 </html>
