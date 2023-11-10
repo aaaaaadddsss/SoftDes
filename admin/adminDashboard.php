@@ -26,17 +26,15 @@ if (!isset($_SESSION['valid'])) {
     <div class="links">
       <?php
       $id = $_SESSION['id'];
-      $query = mysqli_query($con, "SELECT * FROM members WHERE Id=$id");
+      $query = mysqli_query($con, "SELECT * FROM admin WHERE Id=$id");
       // Getting the data in the database
       while ($result = mysqli_fetch_assoc($query)) {
-        $res_FName = $result['FullName'];
+        $res_FName = $result['Name'];
         $res_Email = $result['Email'];
-        $res_CNumber = $result['ContactNumber'];
-        $res_Age = $result['Age'];
         $res_id = $result['Id'];
       }
       // Showing the numebr of members in the gym
-      $sql = "SELECT * from members";
+      $sql = "SELECT * from admin";
 
       if ($result = mysqli_query($con, $sql)) {
 

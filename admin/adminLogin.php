@@ -26,12 +26,12 @@ session_start();
         $email = mysqli_real_escape_string($con, $_POST['email']);
         $password = mysqli_real_escape_string($con, $_POST['password']);
 
-        $result = mysqli_query($con, "SELECT * FROM members WHERE Email ='$email' AND Password ='$password'") or die("Select Error");
+        $result = mysqli_query($con, "SELECT * FROM admin WHERE Email ='$email' AND Password ='$password'") or die("Select Error");
         $row = mysqli_fetch_assoc($result);
 
         if (is_array($row) && !empty($row)) {
           $_SESSION['valid'] = $row['Email'];
-          $_SESSION['name'] = $row['name'];
+          $_SESSION['name'] = $row['Name'];
           $_SESSION['age'] = $row['Age'];
           $_SESSION['id'] = $row['Id'];
         } else {
