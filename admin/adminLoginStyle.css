@@ -153,3 +153,17 @@ body {
   color: white;
   font-size: 20px;
 }
+
+.message1 {
+  text-align:center;
+  background: transparent;
+  padding: 15px 0px;
+  border: 1px solid red;
+  border-radius: 10px;
+}
+
+.message1 p {
+  font-family: "Bayon";
+  color: black;
+  font-size: 20px;
+}

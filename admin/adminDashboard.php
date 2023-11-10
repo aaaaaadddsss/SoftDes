@@ -34,7 +34,7 @@ if (!isset($_SESSION['valid'])) {
         $res_id = $result['Id'];
       }
       // Showing the numebr of members in the gym
-      $sql = "SELECT * from admin";
+      $sql = "SELECT * from members";
 
       if ($result = mysqli_query($con, $sql)) {
 
