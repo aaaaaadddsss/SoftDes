@@ -17,7 +17,7 @@ if (!isset($_SESSION['valid'])) {
   <body>
     <div class="navbar">
       <div class="logo">
-        <a href="#">
+        <a href="../index.html">
           <img
             src="../Components/Images/LogoWhite.png"
             alt="logo"
