@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Bayon&family=Bebas+Neue&family=Poppins&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url(../Components/Images/AdminRegisterBackground.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.navbar {
+  background: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  line-height: 20px;
+  z-index: 100;
+}
+
+.logo {
+  width: 30%;
+  height: 30%;
+  padding: 0px 5px;
+}
+
+.links a {
+  padding: 0px 10px;
+  align-items: center;
+}
+
+.btn {
+  height: 35px;
+  background-color: transparent;
+  color: white;
+  font-family: "Bayon";
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 15px;
+  padding: 0px 20px;
+  border: 1px solid red;
+}
+
+.btn:hover {
+  border: 1px solid white;
+  color: red;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+}
+
+.box {
+  background-color: #1f1f1f;
+  display: flex;
+  flex-direction: column;
+  padding: 25px 25px;
+  border-radius: 15px;
+}
+
+.form-box {
+  width: 500px;
+  margin: 0px 10px;
+}
+
+.form-box header {
+  font-size: 25px;
+  font-weight: 600;
+  padding-bottom: 10px;
+  font-family: "Poppins";
+  color: white;
+  text-align: center;
+  border-bottom: 3px solid red;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.form-box form .field {
+  display: flex;
+  margin-bottom: 10px;
+  flex-direction: column;
+}
+
+.form-box form .field label {
+  font-family: "Poppins";
+  color: white;
+  margin-bottom: 1px;
+}
+
+.form-box form .input input {
+  height: 30px;
+  width: 100%;
+  font-size: 15px;
+  padding: 0 10px;
+  font-family: "Poppins";
+  border: 1px solid black;
+  border-radius: 5px;
+  outline: none;
+}
+
+.submit {
+  width: 100%;
+}
+
+.message {
+  text-align:center;
+  background: transparent;
+  padding: 15px 0px;
+  border: 1px solid red;
+  border-radius: 10px;
+}
+
+.message p {
+  font-family: "Bayon";
+  color: white;
+  font-size: 20px;
+}

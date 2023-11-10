@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Bayon&family=Bebas+Neue&family=Poppins&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url(../Components/Images/AdminLoginBackground.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.navbar {
+  background: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  line-height: 20px;
+  z-index: 100;
+}
+
+.logo {
+  width: 30%;
+  height: 30%;
+  padding: 0px 5px;
+}
+
+.links a {
+  padding: 0px 30px;
+}
+
+.btn {
+  height: 35px;
+  background-color: transparent;
+  color: white;
+  font-family: "Bayon";
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 15px;
+  padding: 0px 20px;
+  border: 1px solid red;
+}
+
+.btn:hover {
+  border: 1px solid white;
+  color: red;
+}
+
+/* END OF NAVBAR */
+.box {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 25px 25px;
+  border-radius: 15px;
+  margin-bottom: 25px;
+}
+
+.box p {
+  font-family: "Poppins";
+}
+
+main {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 90vh;
+}
+
+.main-box {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+.main-box .top {
+  display: flex;
+  flex-direction: column;
+}
