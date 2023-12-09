@@ -66,6 +66,26 @@ body {
   transform-origin: left;
 }
 
+.print-button {
+  margin-top: 50px;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: white;
+  font-family: "Bebas Neue";
+  border-radius: 15px;
+  border-color: red;
+  cursor: pointer;
+  font-size: 30px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.print-button:hover {
+  background-color: black;
+  border-color: white;
+  color: red;
+}
+
 .btn {
   height: 35px;
   background-color: transparent;
