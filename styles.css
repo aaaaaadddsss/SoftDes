@@ -232,7 +232,7 @@ input[type="radio"] {
   height: 65%;
   position: absolute;
   top: 150px;
-  left: 975px;
+  left: 1200px;
   overflow: hidden;
   border-radius: 15px;
 }
@@ -390,9 +390,19 @@ input[type="radio"] {
   left: 95px;
 }
 
+.map-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 35px;
+  bottom: -60px;
+  left: 95px;
+}
+
 .map-icon img {
   width: 30px;
   height: 30px;
+  margin-right: 15px; /* Add margin to separate the icons */
 }
 
 .about-section .buttonforNextAboutSection {

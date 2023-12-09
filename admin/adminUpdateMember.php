@@ -28,15 +28,13 @@ if (isset($_GET['id'])) {
 
 <body>
     <div class="navbar">
-        <div class="logo">
-            <a href="#">
-                <img src="../Components/Images/LogoWhite.png" alt="logo" class="logo" />
-            </a>
-        </div>
-        <div class="links">
-            <a href="adminListMembers.php"> <button class="btn">Go Back </button></a>
-            <a href="adminLogin.php"> <button class="btn">Log Out</button></a>
-        </div>
+        <a href="#home">
+            <img src="../Components/Images/LogoWhite.png" alt="logo" class="logo" />
+        </a>
+        <ul>
+            <li><a href="adminDashboard.php">Go Back</a></li>
+            <li><a href="adminLogin.php">Log Out</a></li>
+        </ul>
     </div>
     <div class="container">
         <div class="box form-box">

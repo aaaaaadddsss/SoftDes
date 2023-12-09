@@ -18,31 +18,32 @@ if (!isset($_SESSION['valid'])) {
 
 <body>
   <div class="navbar">
-    <div class="logo">
-      <a href="#">
-        <img src="../Components/Images/LogoWhite.png" alt="logo" class="logo" />
-      </a>
-    </div>
-    <div class="links">
-      <?php
-      $id = $_SESSION['id'];
-      $query = mysqli_query($con, "SELECT * FROM admin WHERE Id=$id");
-      // Getting the data in the database
-      while ($result = mysqli_fetch_assoc($query)) {
-        $res_FName = $result['Name'];
-        $res_Email = $result['Email'];
-        $res_id = $result['Id'];
-      }
-      // Showing the numebr of members in the gym
-      $sql = "SELECT * from members";
+    <a href="#home">
+      <img src="../Components/Images/LogoWhite.png" alt="logo" class="logo" />
+    </a>
+    <ul>
+      <li><a href="adminLogin.php">Log Out</a></li>
+    </ul>
+  </div>
+  <div class="links">
+    <?php
+    $id = $_SESSION['id'];
+    $query = mysqli_query($con, "SELECT * FROM admin WHERE Id=$id");
+    // Getting the data in the database
+    while ($result = mysqli_fetch_assoc($query)) {
+      $res_FName = $result['Name'];
+      $res_Email = $result['Email'];
+      $res_id = $result['Id'];
+    }
+    // Showing the numebr of members in the gym
+    $sql = "SELECT * from members";
 
-      if ($result = mysqli_query($con, $sql)) {
+    if ($result = mysqli_query($con, $sql)) {
 
-        $rowcount = mysqli_num_rows($result);
-      }
-      ?>
-      <a href="adminLogin.php"> <button class="btn">Log Out</button></a>
-    </div>
+      $rowcount = mysqli_num_rows($result);
+    }
+    ?>
+  </div>
   </div>
   <main>
     <div class="main-box top">
@@ -59,7 +60,7 @@ if (!isset($_SESSION['valid'])) {
           <a href="adminRegister.php"> <button class="ButtonForUser">Add a member</button></a>
           <a href="adminListMembers.php"> <button class="ButtonForUser">View members</button></a>
         </div>
-        
+
       </div>
     </div>
 
