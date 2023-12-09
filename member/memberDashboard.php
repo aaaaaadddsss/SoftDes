@@ -8,6 +8,30 @@ if (!isset($_SESSION['valid'])) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD
+=======
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./memberDashboardStyle.css" />
+    <title>Member Dashboard</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo">
+        <a href="../index.html">
+          <img
+            src="../Components/Images/LogoWhite.png"
+            alt="logo"
+            class="logo"
+          />
+        </a>
+      </div>
+      <div class="links">
+        <?php
+        $id = $_SESSION['id'];
+        $query = mysqli_query($con,"SELECT * FROM members WHERE Id=$id");
+>>>>>>> 0d067c72b7e7f71be186b5c1d5edf51f9bda1480
 
 <head>
   <meta charset="UTF-8" />
